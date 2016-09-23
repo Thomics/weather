@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+  </head>
+  <body ng-app="weather">
+
+    <section class="weather-container" ng-controller="WeatherController as weather">
+      <h1>location weather</h1>
+      <p>Temperature: {{weather.temp}} deg</p>
+      <br />
+      <p>Wind Speed: {{weather.wind}} mph</p>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/services/weather.service.js"></script>
+    <script src="app/weather.controller.js"></script>
+
+
+  </body>
+</html>

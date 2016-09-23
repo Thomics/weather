@@ -1,0 +1,23 @@
+html, body {
+  background: #333;
+  font-family: "Josefin Slab", serif;
+}
+
+.weather-container {
+  background-color: #151515;
+  height: 600px;
+  margin: auto;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 600px;
+}
+
+.weather-container h1 {
+  color: #fff;
+  font-size: 72px;
+}
+
+.weather-container p {
+  color: #fff;
+  font-size: 24px;
+}
