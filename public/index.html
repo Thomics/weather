@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Weather</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/weather-icons.min.css">
@@ -10,11 +10,16 @@
   <body ng-app="weather">
 
     <section class="weather-container" ng-controller="WeatherController as weather">
-      <h1>location weather</h1>
-      <p>Temperature: {{weather.temp}} deg</p>
-      <br />
-      <p>Wind Speed: {{weather.wind}} mph</p>
-      <i class="wi {{weather.icon}} weather-icon"></i>
+      <div class="title-info">
+        <h1>{{weather.location}}</h1>
+        <i class="wi {{weather.icon}} weather-icon"></i>
+        <p class="weather-description">{{weather.description}}</p>
+      </div>
+      <div class="weather-info">
+        <p>Temperature: {{weather.temp}}&ordm;</p>
+        <br />
+        <p>Wind Speed: {{weather.wind}} mph</p>
+      </div>
     </section>
 
 

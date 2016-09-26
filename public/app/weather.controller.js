@@ -11,12 +11,14 @@
 
     var vm = this;
 
+    vm.coords = {};
+    vm.description;
+    vm.forecast = [];
     vm.getCoordinates = getCoordinates;
     vm.getForecast = getForecast;
     vm.getWeather = getWeather;
-
-    vm.forecast = [];
-    vm.coords = {};
+    vm.icon;
+    vm.location = "Seattle";
     vm.temp;
     vm.wind;
 
@@ -26,7 +28,7 @@
 
       vm.getCoordinates();
 
-      vm.getWeather('Seattle');
+      vm.getWeather(vm.location);
       //vm.getForecast('Seattle');
 
 
@@ -66,6 +68,7 @@
           vm.wind = data.wind.speed;
           vm.time = new Date().getHours();
           vm.icon = IconService.getIcon(data.weather[0].id, vm.time);
+          vm.description = data.weather[0].description;
 
         }).error(function (err) {
           console.log(err);

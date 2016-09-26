@@ -1,28 +1,63 @@
 html, body {
-  background: #333;
-  font-family: "Josefin Slab", serif;
+  background: #fff;
+  /*Pattern generated on http://www.patternify.com/*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQYV2M8c+bMfxMTE0YGBgYGMAEDKBwAkAEEBADdNBMAAAAASUVORK5CYII=);
+  font-family: "Roboto", serif;
 }
 
 .weather-container {
-  background-color: #151515;
-  height: 600px;
+  background: radial-gradient( #333, #111);
+  border: 3px solid #fff;
+  box-shadow: 5px 5px 20px #888;
+  height: 400px;
   margin: auto;
+  padding: 20px;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  width: 600px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  width: 800px;
 }
 
 .weather-container h1 {
   color: #fff;
   font-size: 72px;
+  text-align: center;
 }
 
-.weather-container p {
+.weather-container .weather-info p {
   color: #fff;
+  float: right;
   font-size: 24px;
+}
+
+.weather-info {
+  float: left;
+  width: 50%;
+  height: 100%;
+  border-left: 2px solid #fff;
 }
 
 .weather-icon {
   color: #fff;
+  float: left;
   font-size: 172px;
+  margin: 50px 0 0 95px;
+}
+
+.weather-description {
+  clear: both;
+  color: #fff;
+  font-size: 42px;
+  padding-top: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.title-info {
+  float: left;
+  height: 100%;
+  padding-right: 20px;
+  width: calc(50% - 22px);
 }
