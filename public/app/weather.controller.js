@@ -5,9 +5,9 @@
     .module('weather')
     .controller('WeatherController', WeatherController);
   
-  WeatherController.$inject = ['WeatherService'];
+  WeatherController.$inject = ['WeatherService', 'IconService'];
   
-  function WeatherController(WeatherService) {
+  function WeatherController(WeatherService, IconService) {
 
     var vm = this;
 
@@ -24,11 +24,11 @@
 
     function activate() {
 
-      vm.getWeather('Seattle');
-      vm.getForecast('Seattle');
-      console.log(vm.forecast);
-
       vm.getCoordinates();
+
+      vm.getWeather('Seattle');
+      //vm.getForecast('Seattle');
+
 
     }
 
@@ -37,12 +37,13 @@
         navigator.geolocation.getCurrentPosition(function(pos){
           console.log(pos);
 
-          vm.coords.lat = pos.latitude;
-          vm.coords.long = pos.longitude;
+          vm.coords.lat = pos.coords.latitude;
+          vm.coords.long = pos.coords.longitude;
 
+          console.log(vm.coords);
         });
       } else {
-        alert('you blew it');
+        alert('You blew it!');
       }
     }
 
@@ -63,6 +64,9 @@
           console.log(data);
           vm.temp = data.main.temp;
           vm.wind = data.wind.speed;
+          vm.time = new Date().getHours();
+          vm.icon = IconService.getIcon(data.weather[0].id, vm.time);
+
         }).error(function (err) {
           console.log(err);
         });
