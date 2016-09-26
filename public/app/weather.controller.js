@@ -26,7 +26,7 @@
 
     function activate() {
 
-      vm.getCoordinates();
+      //vm.getCoordinates();
 
       vm.getWeather(vm.location);
       //vm.getForecast('Seattle');
@@ -69,6 +69,11 @@
           vm.time = new Date().getHours();
           vm.icon = IconService.getIcon(data.weather[0].id, vm.time);
           vm.description = data.weather[0].description;
+          vm.coords.lat = data.coord.lat;
+          vm.coords.long = data.coord.lon;
+          vm.humidity = data.main.humidity;
+          vm.tempMax = data.main.temp_max;
+          vm.tempMin = data.main.temp_min;
 
         }).error(function (err) {
           console.log(err);

@@ -27,6 +27,7 @@ html, body {
 }
 
 .weather-container .weather-info p {
+  clear: both;
   color: #fff;
   float: right;
   font-size: 24px;
