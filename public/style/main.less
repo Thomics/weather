@@ -1,56 +1,67 @@
+@height: 25vw;
+@width: 25vw;
+
+
 html, body {
   background: #fff;
   /*Pattern generated on http://www.patternify.com/*/
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQYV2M8c+bMfxMTE0YGBgYGMAEDKBwAkAEEBADdNBMAAAAASUVORK5CYII=);
-  font-family: "Roboto", serif;
+  font-family: "Montserrat", serif;
 }
 
 .weather-container {
-  background: radial-gradient( #333, #111);
-  border: 3px solid #fff;
+  background: #6b84a2;
   box-shadow: 5px 5px 20px #888;
-  height: 400px;
-  margin: auto;
+  height: @height;
   padding: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 800px;
+  width: @width;
 
-  h2 {
+
+  .location {
     color: #fff;
-    font-size: 72px;
+    font-size: 42px;
+    letter-spacing: 3px;
     text-align: center;
+    text-transform: lowercase;
   }
 
-  .weather-info {
-    float: left;
-    width: 50%;
-    height: 100%;
-    border-left: 2px solid #fff;
 
+  .weather-info {
 
     p {
-      clear: both;
       color: #fff;
-      float: right;
       font-size: 24px;
     }
   }
 
+  .temperature {
+    font-size: 96px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .weather-icon {
+    color: #fff;
+    font-size: 100px;
+    height: 50%;
+    text-align: center;
+    width: 100%;
+  }
+
+  hr {
+    margin: 0 auto 15px auto;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.3);
+  }
+
 }
 
 
 
 
-.weather-icon {
-  color: #fff;
-  float: left;
-  font-size: 172px;
-  margin: 50px 0 0 95px;
-}
+
 
 .weather-description {
   clear: both;
@@ -62,8 +73,5 @@ html, body {
 }
 
 .title-info {
-  float: left;
-  height: 100%;
-  padding-right: 20px;
-  width: calc(50% - 22px);
+
 }

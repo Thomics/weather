@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Weather</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="public/style/reset.css">
     <link rel="stylesheet/less" type="text/css" href="public/style/main.less" />
     <link rel="stylesheet" href="public/style/weather-icons.min.css">
@@ -10,28 +10,35 @@
   <body ng-app="weather">
 
     <section class="weather-container" ng-controller="WeatherController as weather">
-      <div class="title-info">
-        <h2>{{weather.location}}</h2>
-        <i class="wi {{weather.icon}} weather-icon"></i>
-        <p class="weather-description">{{weather.description}}</p>
-      </div>
+      <!--<div class="title-info">-->
+        <!--<h2>{{weather.location}}</h2>-->
+        <!--<i class="wi {{weather.icon}} weather-icon"></i>-->
+        <!--<p class="weather-description">{{weather.description}}</p>-->
+      <!--</div>-->
 
-      <div class="weather-info">
-        {{weather.main}}
-        <p>Temperature: {{weather.temp}}&ordm;</p>
-        <br />
-        <p>Wind Speed: {{weather.wind}} mph</p>
-        <br />
-        <p>Latitude: {{weather.lat}}</p>
-        <br />
-        <p>Longitude: {{weather.lon}}</p>
-        <br />
-        <p>Humidity: {{weather.humidity}}</p>
-        <br />
-        <p>Max Temperature: {{weather.tempMax}}</p>
-        <br />
-        <p>Min Temperature: {{weather.tempMin}}</p>
-      </div>
+      <!--<div class="weather-info">-->
+        <!--{{weather.main}}-->
+        <!--<p>Temperature: {{weather.temp}}&ordm;</p>-->
+        <!--<br />-->
+        <!--<p>Wind Speed: {{weather.wind}} mph</p>-->
+        <!--<br />-->
+        <!--<p>Latitude: {{weather.lat}}</p>-->
+        <!--<br />-->
+        <!--<p>Longitude: {{weather.lon}}</p>-->
+        <!--<br />-->
+        <!--<p>Humidity: {{weather.humidity}}</p>-->
+        <!--<br />-->
+        <!--<p>Max Temperature: {{weather.tempMax}}</p>-->
+        <!--<br />-->
+        <!--<p>Min Temperature: {{weather.tempMin}}</p>-->
+      <!--</div>-->
+      <i class="wi {{weather.icon}} weather-icon"></i>
+
+      <hr />
+
+      <p class="temperature">{{weather.temp}}&ordm;</p>
+      <h2 class="location">{{weather.location}}</h2>
+
     </section>
 
 
