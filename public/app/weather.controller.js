@@ -21,17 +21,13 @@
     vm.location = "Seattle";
     vm.temp;
     vm.wind;
+    vm.lat;
+    vm.lon;
 
     activate();
 
     function activate() {
-
-      //vm.getCoordinates();
-
       vm.getWeather(vm.location);
-      //vm.getForecast('Seattle');
-
-
     }
 
     function getCoordinates() {
@@ -64,17 +60,20 @@
       WeatherService.getWeather(city)
         .success(function (data) {
           console.log(data);
+          console.log(data.coord);
+
           vm.temp = data.main.temp;
           vm.wind = data.wind.speed;
           vm.time = new Date().getHours();
           vm.icon = IconService.getIcon(data.weather[0].id, vm.time);
           vm.description = data.weather[0].description;
-          vm.coords.lat = data.coord.lat;
-          vm.coords.long = data.coord.lon;
+          vm.lat = data.coord.lat;
+          vm.lon = data.coord.lon;
           vm.humidity = data.main.humidity;
           vm.tempMax = data.main.temp_max;
           vm.tempMin = data.main.temp_min;
 
+          console.log(vm.tempMax);
         }).error(function (err) {
           console.log(err);
         });

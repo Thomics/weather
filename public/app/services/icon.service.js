@@ -68,6 +68,7 @@
       '620': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //light shower snow
       '621': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //shower snow
       '622': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //heavy shower snow
+      '711': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //heavy shower snow
       //Clear/Clear
       '800': {'daytime': 'wi-day-sunny', 'nighttime': 'wi-night-clear'}, //clear
       '801': {'daytime': 'wi-day-cloudy', 'nighttime': 'wi-night-alt-cloudy'}, //few clouds

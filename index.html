@@ -4,25 +4,27 @@
     <title>Weather</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="public/style/reset.css">
-    <link rel="stylesheet" href="public/style/main.css">
+    <link rel="stylesheet/less" type="text/css" href="public/style/main.less" />
     <link rel="stylesheet" href="public/style/weather-icons.min.css">
   </head>
   <body ng-app="weather">
 
     <section class="weather-container" ng-controller="WeatherController as weather">
       <div class="title-info">
-        <h1>{{weather.location}}</h1>
+        <h2>{{weather.location}}</h2>
         <i class="wi {{weather.icon}} weather-icon"></i>
         <p class="weather-description">{{weather.description}}</p>
       </div>
+
       <div class="weather-info">
+        {{weather.main}}
         <p>Temperature: {{weather.temp}}&ordm;</p>
         <br />
         <p>Wind Speed: {{weather.wind}} mph</p>
         <br />
-        <p>Latitude: {{weather.coords.lat}}</p>
+        <p>Latitude: {{weather.lat}}</p>
         <br />
-        <p>Longitude: {{weather.coords.long}}</p>
+        <p>Longitude: {{weather.lon}}</p>
         <br />
         <p>Humidity: {{weather.humidity}}</p>
         <br />
@@ -40,6 +42,7 @@
     <script src="public/app/services/weather.service.js"></script>
     <script src="public/app/services/icon.service.js"></script>
     <script src="public/app/weather.controller.js"></script>
+    <script src="public/style/less.js" type="text/javascript"></script>
 
 
   </body>
