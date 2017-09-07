@@ -24,11 +24,14 @@
     vm.lat;
     vm.lon;
 
+
     activate();
 
     function activate() {
       vm.getWeather(vm.location);
     }
+
+
 
     function getCoordinates() {
       console.log('ghost');

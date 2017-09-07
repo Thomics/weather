@@ -3,7 +3,7 @@
   'use strict';
   
   angular
-    .module('weatherWidget')
+    .module('weather')
     .service('WeatherService', WeatherService);
   
   WeatherService.$inject = ['$http'];

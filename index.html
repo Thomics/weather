@@ -11,13 +11,13 @@
 
     <wa-weather-widget></wa-weather-widget>
 
-    <section class="add-location-container weather-container" >
+    <section class="add-location-container weather-container" ng-controller="WeatherController as weather">
       <p ng-click="display=true" ng-hide="display">+</p>
 
-      <form ng-submit="display=false" ng-show="display">
-        <input type="text" name="location" value="City Name">
-        <input type="submit" >
+      <form ng-submit="weather.getWeather(location); display=false" ng-show="display">
+        <input type="text" name="location" value="City Name" ng-model="location">
       </form>
+
     </section>
 
 
