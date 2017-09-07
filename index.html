@@ -9,15 +9,15 @@
   </head>
   <body ng-app="weather">
 
-    <section class="weather-container" ng-controller="WeatherController as weather">
-      <i class="wi {{weather.icon}} weather-icon"></i>
-      <hr />
-      <p class="temperature">{{weather.temp}}&ordm;</p>
-      <h2 class="location">{{weather.location}}</h2>
-    </section>
+    <wa-weather-widget></wa-weather-widget>
 
-    <section class="add-location-container weather-container">
-      <p>+</p>
+    <section class="add-location-container weather-container" >
+      <p ng-click="display=true" ng-hide="display">+</p>
+
+      <form ng-submit="display=false" ng-show="display">
+        <input type="text" name="location" value="City Name">
+        <input type="submit" >
+      </form>
     </section>
 
 
@@ -29,6 +29,8 @@
     <script src="public/app/services/weather.service.js"></script>
     <script src="public/app/services/icon.service.js"></script>
     <script src="public/app/weather.controller.js"></script>
+    <script src="public/app/weatherWidget/waWeatherWidget.js"></script>
+
     <script src="public/style/less.js" type="text/javascript"></script>
 
 

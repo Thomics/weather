@@ -31,6 +31,7 @@
     }
 
     function getCoordinates() {
+      console.log('ghost');
       if ( navigator.geolocation ) {
         navigator.geolocation.getCurrentPosition(function(pos){
           console.log(pos);
@@ -48,7 +49,6 @@
     function getForecast(city) {
       WeatherService.getForecast(city)
         .success(function (data) {
-          console.log(data);
           vm.forecast = generateForecast(data.list);
         }).error(function (err) {
           console.log(err);
@@ -59,8 +59,6 @@
     function getWeather(city) {
       WeatherService.getWeather(city)
         .success(function (data) {
-          console.log(data);
-          console.log(data.coord);
 
           vm.temp = data.main.temp;
           vm.wind = data.wind.speed;
@@ -73,7 +71,6 @@
           vm.tempMax = data.main.temp_max;
           vm.tempMin = data.main.temp_min;
 
-          console.log(vm.tempMax);
         }).error(function (err) {
           console.log(err);
         });
@@ -89,7 +86,6 @@
             temp: arr[i].main.temp
           });
       }
-      console.log(forecast);
       return forecast;
     }
 

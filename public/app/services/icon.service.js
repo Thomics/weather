@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('weather')
+    .module('weatherWidget')
     .service('IconService', IconService);
 
   IconService.$inject = [];
@@ -15,7 +15,6 @@
     vm.getIcon = getIcon;
 
     function getIcon(icon, time) {
-      console.log(icon);
       if ( time >= 6 && time <= 19 ) {
         return vm.weatherIcons[icon].daytime
       } else {
