@@ -12,6 +12,7 @@
     var vm = this;
 
     vm.getWeather = getWeather;
+    vm.reset = reset;
     vm.icon;
     vm.location = "Seattle";
     vm.weatherArr = [];
@@ -34,9 +35,19 @@
             location: vm.location
           });
 
+          vm.location = '';
+
+          $scope.locationForm.$setPristine(true);
+          $scope.locationForm.$setUntouched(true);
+
         }).error(function (err) {
           console.log(err);
         });
+    }
+
+    function reset() {
+      console.log('loc');
+      vm.location = angular.copy('');
     }
 
 

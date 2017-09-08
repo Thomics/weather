@@ -19,6 +19,38 @@ html, body {
   padding: @vertical-padding @horizontal-padding;
   width: @width;
 
+  &:nth-child(2n) {
+    background: #7e6486;
+  }
+
+  &:nth-child(3n) {
+    background: #ba7d80;
+  }
+
+  &:nth-child(4n) {
+    background: #e0a47f;
+  }
+
+  &:nth-child(5n) {
+    background: #924065;
+  }
+
+  &:nth-child(6n) {
+    background: #c15e5d;
+  }
+
+  &:nth-child(7n) {
+    background: #e08e5c;
+  }
+
+  &:nth-child(8n) {
+    background: #ecbd52;
+  }
+
+  &:nth-child(9n) {
+    background: #d77852;
+  }
+
 
   .location {
     color: #FFF;
@@ -69,6 +101,10 @@ html, body {
   align-items: center;
   justify-content: center;
   color: #CCC;
+  float: left;
+  height: @height;
+  padding: @vertical-padding @horizontal-padding;
+  width: @width;
 
 
   p {
@@ -76,7 +112,7 @@ html, body {
     cursor: pointer;
   }
 
-  form {
+  .location-form {
     width: 75%;
     text-align: center;
 
@@ -90,3 +126,6 @@ html, body {
 
 
 }
+
+
+
