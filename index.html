@@ -9,9 +9,11 @@
   </head>
   <body ng-app="weather">
 
+  <section ng-controller="WeatherController as weather">
+
     <wa-weather-widget></wa-weather-widget>
 
-    <section class="add-location-container weather-container" ng-controller="WeatherController as weather">
+    <section class="add-location-container weather-container" >
       <p ng-click="display=true" ng-hide="display">+</p>
 
       <form ng-submit="weather.getWeather(location); display=false" ng-show="display">
@@ -20,7 +22,7 @@
 
     </section>
 
-
+  </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>

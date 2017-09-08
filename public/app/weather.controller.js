@@ -5,9 +5,9 @@
     .module('weather')
     .controller('WeatherController', WeatherController);
   
-  WeatherController.$inject = ['WeatherService', 'IconService'];
+  WeatherController.$inject = ['WeatherService', 'IconService', '$scope'];
   
-  function WeatherController(WeatherService, IconService) {
+  function WeatherController(WeatherService, IconService, $scope) {
 
     var vm = this;
 
@@ -16,12 +16,7 @@
     vm.location = "Seattle";
     vm.weatherArr = [];
 
-    activate();
-
-    function activate() {
-      vm.getWeather(vm.location);
-    }
-
+  //////////////////////////////////////////////////////////////////////////////////////////
 
     function getWeather(city) {
       WeatherService.getWeather(city)
@@ -38,8 +33,6 @@
             icon: vm.icon,
             location: vm.location
           });
-
-          console.log(vm.weatherArr);
 
         }).error(function (err) {
           console.log(err);
