@@ -1,0 +1,13 @@
+<div class="add-location-container" >
+  <p ng-click="display=true" ng-hide="display">+</p>
+
+  <form
+          class = 'location-form'
+          name = 'form'
+          ng-submit = "weather.getWeather(location); display=false"
+          ng-show = "display">
+    <label>Location</label><br />
+    <input name='location' type="text" value="City Name" placeholder="City Name" ng-model="location">
+  </form>
+
+</div>

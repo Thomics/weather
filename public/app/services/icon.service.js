@@ -67,9 +67,18 @@
       '620': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //light shower snow
       '621': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //shower snow
       '622': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //heavy shower snow
-      '711': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //heavy shower snow
-      '721': {'daytime': 'wi-day-snow-wind', 'nighttime': 'wi-night-alt-snow'}, //heavy shower snow
-      //Clear/Clear
+      //Hazardous Weather
+      '701': {'daytime': 'wi-raindrops', 'nighttime': 'wi-raindrops'}, //Mist
+      '711': {'daytime': 'wi-smoke', 'nighttime': 'wi-smoke'}, //Smoke
+      '721': {'daytime': 'wi-day-haze', 'nighttime': 'wi-windy'}, //Haze
+      '731': {'daytime': 'wi-dust', 'nighttime': 'wi-dust'}, //sand, dust whirls
+      '741': {'daytime': 'wi-day-fog', 'nighttime': 'wi-night-fog'}, //fog
+      '751': {'daytime': 'wi-sandstorm', 'nighttime': 'wi-sandstorm'}, //sand
+      '761': {'daytime': 'wi-dust', 'nighttime': 'wi-dust'}, //dust
+      '762': {'daytime': 'wi-volcano', 'nighttime': 'wi-volcano'}, //volcanic ash
+      '771': {'daytime': 'wi-tsunami', 'nighttime': 'wi-tsunami'}, //squalls
+      '781': {'daytime': 'wi-tornado', 'nighttime': 'wi-tornado'}, //tornado
+      //Clear
       '800': {'daytime': 'wi-day-sunny', 'nighttime': 'wi-night-clear'}, //clear
       '801': {'daytime': 'wi-day-cloudy', 'nighttime': 'wi-night-alt-cloudy'}, //few clouds
       '802': {'daytime': 'wi-day-cloudy', 'nighttime': 'wi-night-alt-cloudy'}, //scattered clouds
@@ -87,16 +96,6 @@
 
 
 /*Implement in the future
-701	mist
-711	smoke
-721	haze
-731	sand, dust whirls
-741	fog
-751	sand
-761	dust
-762	volcanic ash
-771	squalls
-781	tornado
 
 900	tornado
 901	tropical storm

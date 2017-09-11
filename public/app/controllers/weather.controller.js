@@ -37,12 +37,6 @@
 
           vm.locationPlaceholder = "Cities Name";
 
-          console.log(vm.weatherArr);
-
-          //vm.reset();
-
-
-
         }).error(function (err) {
           console.log(err);
         });

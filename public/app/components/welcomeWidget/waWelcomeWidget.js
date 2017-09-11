@@ -8,9 +8,7 @@
 angular.module('weather')
   .directive('waWelcomeWidget', function(){
     return {
-      templateUrl: 'public/app/welcomeWidget/waWelcomeWidget.html',
+      templateUrl: 'public/app/components/welcomeWidget/waWelcomeWidget.html',
       controller: 'WeatherController'
-      //,
-      //controllerAs: 'welcomeWidget'
     };
   });

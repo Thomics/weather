@@ -1,7 +1,8 @@
 
-@height: calc(~"25vw -" @vertical-padding);
+@height: calc(~"50vh -" @top-padding + @bottom-padding);
 @width: calc(~"33.33333vw -" ( @horizontal-padding + @horizontal-padding));
-@vertical-padding: 45px;
+@top-padding: 30px;
+@bottom-padding: 60px;
 @horizontal-padding: 20px;
 
 
@@ -16,7 +17,7 @@ html, body {
   background: #6b84a2;
   float: left;
   height: @height;
-  padding: @vertical-padding @horizontal-padding;
+  padding: @top-padding @horizontal-padding @bottom-padding @horizontal-padding;
   width: @width;
 
   &:nth-child(2n) {
@@ -103,7 +104,7 @@ html, body {
   color: #CCC;
   float: left;
   height: @height;
-  padding: @vertical-padding @horizontal-padding;
+  padding: @top-padding @horizontal-padding @bottom-padding @horizontal-padding;
   width: @width;
 
 

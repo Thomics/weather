@@ -10,7 +10,7 @@ console.log('hi');
 angular.module('weather')
   .directive('waWeatherWidget', function(){
     return {
-      templateUrl: 'public/app/weatherWidget/waWeatherWidget.html',
+      templateUrl: 'public/app/components/weatherWidget/waWeatherWidget.html',
       controller: 'WeatherController',
       controllerAs: 'weatherWidget'
     };

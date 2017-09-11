@@ -1,8 +1,8 @@
 
-<section class="welcome-container" ng-hide="display" ng-init="display=false">
+<section class="welcome-container" ng-hide="show" ng-init="show=false">
   <div class="welcome-box">
     <h1>Weather Tracker</h1>
-    <form ng-submit = "weather.getWeather(location); display=true">
+    <form ng-submit = "weather.getWeather(location); show=true">
       <label>Enter a City Name</label><br />
       <input name='location' type="text" value="City Name" placeholder="City Name" ng-model="location">
     </form>
