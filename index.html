@@ -9,19 +9,20 @@
   </head>
   <body ng-app="weather">
 
+
   <section ng-controller="WeatherController as weather">
+  <wa-welcome-widget></wa-welcome-widget>
 
     <wa-weather-widget></wa-weather-widget>
 
     <section class="add-location-container" >
-      <p ng-click="display=true" ng-hide="display">+</p>
+      <p ng-click="display=true" ng-hide=="display">+</p>
 
       <form
         class = 'location-form'
         name = 'form'
         ng-submit = "weather.getWeather(location); display=false"
-        ng-show = "display"
-      >
+        ng-show = "display">
         <label>Location</label><br />
         <input name='location' type="text" value="City Name" placeholder="City Name" ng-model="location">
       </form>
@@ -37,6 +38,7 @@
     <script src="public/app/services/icon.service.js"></script>
     <script src="public/app/weather.controller.js"></script>
     <script src="public/app/weatherWidget/waWeatherWidget.js"></script>
+    <script src="public/app/welcomeWidget/waWelcomeWidget.js"></script>
 
     <script src="public/style/less.js" type="text/javascript"></script>
 

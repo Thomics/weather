@@ -1,0 +1,10 @@
+
+<section class="welcome-container" ng-hide="display" ng-init="display=false">
+  <div class="welcome-box">
+    <h1>Weather Tracker</h1>
+    <form ng-submit = "weather.getWeather(location); display=true">
+      <label>Enter a City Name</label><br />
+      <input name='location' type="text" value="City Name" placeholder="City Name" ng-model="location">
+    </form>
+  </div>
+</section>

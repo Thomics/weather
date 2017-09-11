@@ -5,9 +5,9 @@
     .module('weather')
     .controller('WeatherController', WeatherController);
   
-  WeatherController.$inject = ['WeatherService', 'IconService', '$scope'];
+  WeatherController.$inject = ['WeatherService', 'IconService'];
   
-  function WeatherController(WeatherService, IconService, $scope) {
+  function WeatherController(WeatherService, IconService) {
 
     var vm = this;
 
@@ -37,6 +37,7 @@
 
           vm.locationPlaceholder = "Cities Name";
 
+          console.log(vm.weatherArr);
 
           //vm.reset();
 
