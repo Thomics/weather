@@ -1,6 +1,7 @@
 
 <section>
   <div class="weather-container" ng-repeat="location in weather.weatherArr track by $index">
+    <div class="delete-location" ng-click="weather.deleteLocation(location.location)">-</div>
     <i class="wi {{location.icon}} weather-icon" alt="{{location.weatherType}}" title="{{location.weatherType}}"></i>
     <hr />
     <p class="temperature">{{location.temp}}&ordm;</p>

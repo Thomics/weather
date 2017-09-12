@@ -18,10 +18,11 @@
     <!-- The Location display of the weather -->
     <wa-weather-widget></wa-weather-widget>
 
-    <!-- The + icon for adding another location and the form for the location name-->
+    <!-- The + icon for adding another location and the form for the location name -->
     <wa-add-location></wa-add-location>
 
-    <div ng-click="weather.updateWeather()"> click me </div>
+    <!-- The refresh button - only displays when there is at least one location -->
+    <div class='refresh-button' ng-click="weather.updateWeather()" ng-show="show"><img src="public/img/reset.png" /></div>
 
   </section>
 

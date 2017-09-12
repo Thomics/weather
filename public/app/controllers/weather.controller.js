@@ -13,6 +13,7 @@
 
     vm.getWeather = getWeather;
     vm.updateWeather = updateWeather;
+    vm.deleteLocation = deleteLocation;
     vm.icon;
     vm.id;
     vm.weatherType;
@@ -84,6 +85,17 @@
           console.log(err);
         });
 
+
+    }
+
+    function deleteLocation(location) {
+
+      var tempWeatherArr = vm.weatherArr.filter(function( obj ) {
+        return obj.location !== location;
+      });
+
+      console.log(tempWeatherArr);
+      vm.weatherArr = tempWeatherArr;
 
     }
 

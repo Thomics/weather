@@ -40,18 +40,22 @@ html, body {
     background: #c15e5d;
   }
 
-  &:nth-child(7n) {
-    background: #e08e5c;
-  }
+  //&:hover .delete-location {
+  //  display: inherit;
+  //  width: 10%;
+  //  height: 6%;
+  //  margin-top: -3%;
+  //}
 
-  &:nth-child(8n) {
-    background: #ecbd52;
+  .delete-location {
+    font-size: 120px;
+    line-height: 0;
+    color: #FFF;
+    width: 10%;
+    height: 6%;
+    margin-top: -3%;
+    cursor: pointer;
   }
-
-  &:nth-child(9n) {
-    background: #d77852;
-  }
-
 
   .location {
     color: #FFF;
@@ -60,7 +64,6 @@ html, body {
     text-align: center;
     text-transform: lowercase;
   }
-
 
   .weather-info {
 
@@ -181,3 +184,19 @@ html, body {
   }
 }
 
+.refresh-button {
+  width: 7vw;
+  height: 6vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(114, 0, 132, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 90%;
+  }
+}
