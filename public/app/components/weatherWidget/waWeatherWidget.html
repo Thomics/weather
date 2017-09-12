@@ -1,7 +1,7 @@
 
 <section>
   <div class="weather-container" ng-repeat="location in weather.weatherArr track by $index">
-    <i class="wi {{location.icon}} weather-icon"></i>
+    <i class="wi {{location.icon}} weather-icon" alt="{{location.weatherType}}" title="{{location.weatherType}}"></i>
     <hr />
     <p class="temperature">{{location.temp}}&ordm;</p>
     <h2 class="location">{{location.location}}</h2>

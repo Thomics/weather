@@ -13,8 +13,8 @@
 
     vm.getWeather = getWeather;
     vm.icon;
+    vm.weatherType;
     vm.location = "Seattle";
-    vm.locationPlaceholder = 'City Name';
     vm.weatherArr = [];
 
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -28,25 +28,21 @@
           vm.location = city;
           vm.time = new Date().getHours();
           vm.icon = IconService.getIcon(data.weather[0].id, vm.time);
+          vm.weatherType = IconService.getWeatherType(data.weather[0].id);
+
 
           vm.weatherArr.push({
+            location: vm.location,
             temp: vm.temp,
             icon: vm.icon,
-            location: vm.location
+            weatherType: vm.weatherType
           });
 
-          vm.locationPlaceholder = "Cities Name";
 
         }).error(function (err) {
           console.log(err);
         });
     }
-
-
-
-
-
-
 
   }
 
