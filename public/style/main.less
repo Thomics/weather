@@ -40,21 +40,19 @@ html, body {
     background: #c15e5d;
   }
 
-  //&:hover .delete-location {
-  //  display: inherit;
-  //  width: 10%;
-  //  height: 6%;
-  //  margin-top: -3%;
-  //}
+  &:hover .delete-location {
+    color: #FFF;
+  }
 
   .delete-location {
     font-size: 120px;
     line-height: 0;
-    color: #FFF;
+    color: rgba(255,255,255,0);
     width: 10%;
     height: 6%;
     margin-top: -3%;
     cursor: pointer;
+    transition: all .2s ease-in;
   }
 
   .location {

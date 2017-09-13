@@ -29,6 +29,7 @@
     }
 
     vm.weatherIcons = {
+
       //Thunderstorms
       '200': {'daytime': 'wi-storm-showers', 'nighttime': 'wi-night-alt-storm-showers', icon: 'Thunderstorm with light rain'}, //thunderstorm with light rain
       '201': {'daytime': 'wi-storm-showers', 'nighttime': 'wi-night-alt-storm-showers', icon: 'Thunderstorm with rain'}, //thunderstorm with rain
@@ -88,38 +89,30 @@
       '801': {'daytime': 'wi-day-cloudy', 'nighttime': 'wi-night-alt-cloudy', icon: 'few clouds'}, //few clouds
       '802': {'daytime': 'wi-day-cloudy', 'nighttime': 'wi-night-alt-cloudy', icon: 'scattered clouds'}, //scattered clouds
       '803': {'daytime': 'wi-day-cloudy', 'nighttime': 'wi-night-alt-cloudy', icon: 'broken clouds'}, //broken clouds
-      '804': {'daytime': 'wi-cloudy', 'nighttime': 'wi-cloudy', icon: 'overcast clouds'} //overcast clouds
+      '804': {'daytime': 'wi-cloudy', 'nighttime': 'wi-cloudy', icon: 'overcast clouds'}, //overcast clouds
+      //Chaos
+      '900': {'daytime': 'wi-tornado', 'nighttime': 'wi-tornado', icon: 'tornado'}, //tornado
+      '901': {'daytime': 'wi-tsunami', 'nighttime': 'wi-tsunami', icon: 'ropical storm'}, //ropical storm
+      '902': {'daytime': 'wi-hurricane', 'nighttime': 'wi-hurricane', icon: 'hurricane'}, //hurricane
+      '903': {'daytime': 'wi-thermometer', 'nighttime': 'wi-thermometer', icon: 'cold'}, //cold
+      '904': {'daytime': 'wi-thermometer', 'nighttime': 'wi-thermometer', icon: 'hot'}, //hot
+      '905': {'daytime': 'wi-windy', 'nighttime': 'wi-windy', icon: 'windy'}, //windy
+      '906': {'daytime': 'wi-day-hail', 'nighttime': 'wi-night-alt-hail', icon: 'hail'}, //hail
+      '951': {'daytime': 'wi-sunrise', 'nighttime': 'wi-moonrise', icon: 'calm'}, //calm
+      '952': {'daytime': 'wi-windy', 'nighttime': 'wi-windy', icon: 'light breeze'}, //light breeze
+      '953': {'daytime': 'wi-windy', 'nighttime': 'wi-windy', icon: 'gentle breeze'}, //gentle breeze
+      '954': {'daytime': 'wi-windy', 'nighttime': 'wi-windy', icon: 'moderate breeze'}, //moderate breeze
+      '955': {'daytime': 'wi-windy', 'nighttime': 'wi-windy', icon: 'fresh breeze'}, //fresh breeze
+      '956': {'daytime': 'wi-windy', 'nighttime': 'wi-windy', icon: 'strong breeze'}, //strong breeze
+      '957': {'daytime': 'wi-strong-wind', 'nighttime': 'wi-strong-wind', icon: 'high wind, near gale'}, //high wind, near gale
+      '958': {'daytime': 'wi-strong-wind', 'nighttime': 'wi-strong-wind', icon: 'gale'}, //gale
+      '959': {'daytime': 'wi-strong-wind', 'nighttime': 'wi-strong-wind', icon: 'severe gale'}, //severe gale
+      '960': {'daytime': 'wi-day-storm-showers', 'nighttime': 'wi-day-storm-showers', icon: 'storm'}, //storm
+      '961': {'daytime': 'wi-day-storm-showers', 'nighttime': 'wi-day-storm-showers', icon: 'violent storm'}, //violent storm
+      '962': {'daytime': 'wi-hurricane', 'nighttime': 'wi-hurricane', icon: 'hurricane'} //hurricane
 
     };
-
-
-
 
   }
 
 })();
-
-
-/*Implement in the future
-
-900	tornado
-901	tropical storm
-902	hurricane
-903	cold
-904	hot
-905	windy
-906	hail
-
-951	calm
-952	light breeze
-953	gentle breeze
-954	moderate breeze
-955	fresh breeze
-956	strong breeze
-957	high wind, near gale
-958	gale
-959	severe gale
-960	storm
-961	violent storm
-962	hurricane
-*/
